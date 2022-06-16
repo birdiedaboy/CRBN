@@ -252,4 +252,13 @@ nav a:hover{
     right: 15%;
     top: 1rem;
 }
-
+.textoHome{
+    /* display: grid; */
+    padding-top: 2rem;
+    
+}
+.textoHome p{
+    max-width: 50ch;
+    margin: auto;
+    text-align: center;
+}
