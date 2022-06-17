@@ -9,6 +9,7 @@ html {
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -60,7 +61,7 @@ strong {
 
 /* Estilo del Nav */
 header{
-	background: aqua;
+	background: #FFF;
     /* opacity: 0.5; */
 	text-align: center;
 	position: sticky;
@@ -69,9 +70,13 @@ header{
 	z-index: 666;
     /* min-height: 5.5rem; */
     display: flex;
+    padding-inline: 1rem;
+    /* display: grid; */
+		/* grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr; */
 }
 .logo{
 	margin: 1.5em 0;
+    grid-column: 2 / span 1;
 	
 }
 .nav-toggle{
@@ -118,30 +123,46 @@ nav{
 	/* transform: scale(1, 0); */
 	/* transform-origin: top; */
 	/* transition: transform 400ms ease-in-out; */
-    display: flex;
-    flex-direction: column;
+    grid-column: 3 / 4;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	
 }
 nav ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+    display: flex;
+    gap: .5rem;
+    align-items: flex-end;
+
+    
 }
 
 nav li {
-	margin-bottom: 1em;
-	margin-left: 1em;
+	/* margin-bottom: 1em; */
+	/* margin-left: 1em; */
+    /* max-width: 1.5rem; */
+}
+nav li:first-child{
+    max-width: 1.4rem;
+}
+nav li:nth-child(2){
+    max-width: 2rem;
 }
 
-/* nav a{
-	color: white;
+
+nav a{
+	color: black;
 	text-decoration: none;
 	font-size: 1.2 rem;
-	opacity: 0;
-	transition: opacity 150ms ease-in-out;
-} */
+	/* opacity: 0; */
+	/* transition: opacity 150ms ease-in-out; */
+}
 nav a:hover{
-	color: #DCBD6B;
+	color: #899A98;
+    font-weight: bold;
 }
 .nav-toggle:checked ~ nav {
 	transform: scale(1,1);
@@ -182,7 +203,7 @@ nav a:hover{
 		display: flex;
 	}
 	nav li{
-		margin-left: 3em;
+		margin-left: 1em;
 		margin-bottom: 0;
 	}
 	nav a{
@@ -193,7 +214,7 @@ nav a:hover{
 		content:'';
 		display: block;
 		height: 4px;
-		background: #DCBD6B;
+		background: #899A98;
 		width: 100%;
 		position: absolute;
 		top: -.75em;
@@ -244,6 +265,7 @@ nav a:hover{
 }
 .fraseHero{
     margin: auto;
+    max-width: 80%;
     /* position: absolute; */
 
 }
@@ -254,11 +276,48 @@ nav a:hover{
 }
 .textoHome{
     /* display: grid; */
-    padding-top: 2rem;
+    padding-top: 5rem;
+    margin-inline: 1rem ;
     
 }
 .textoHome p{
-    max-width: 50ch;
+    max-width: 40ch;
     margin: auto;
     text-align: center;
+    font-size: 1rem;
+}
+.textoHome p:last-child{
+   font-weight: bold;
+}
+
+footer{
+    /* background-color: #DCBD6B; */
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+footer figure{
+    display: flex;
+    gap: 3rem;
+    margin: auto;
+    padding-block-start: 3rem;
+    padding-block-end: 3rem;
+    /* outline: 1px solid blue; */
+}
+.gBye{
+    display: flex;
+    justify-content: space-between;
+    padding-block-end: 3rem;
+    padding-block-start: 0rem;
+    padding-inline: 12%;
+    
+    /* outline: 1px solid red; */
+}
+.dRights{
+    /* outline: 3px solid blue; */
+}
+.fMail{
+
 }
