@@ -309,7 +309,7 @@ footer figure{
 .gBye{
     /* display: flex; */
     /* justify-content: space-between; */
-    padding-block-end: 7rem;
+    padding-block-end: 3rem;
     padding-block-start: 0rem;
     padding-inline: 1rem;
     font-size: 0.6rem;
