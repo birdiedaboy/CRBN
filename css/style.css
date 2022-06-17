@@ -307,11 +307,14 @@ footer figure{
     /* outline: 1px solid blue; */
 }
 .gBye{
-    display: flex;
-    justify-content: space-between;
-    padding-block-end: 3rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding-block-end: 7rem;
     padding-block-start: 0rem;
-    padding-inline: 12%;
+    padding-inline: 1rem;
+    font-size: 0.6rem;
+    text-align: center;
+
     
     /* outline: 1px solid red; */
 }
